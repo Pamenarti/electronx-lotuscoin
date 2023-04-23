@@ -1,4 +1,4 @@
-# Esplora - Electrs backend API
+# Lotuscoin - Electrs backend API
 
 A block chain index engine and HTTP API written in Rust based on [romanz/electrs](https://github.com/Pamenarti/electronx-lotuscoin). Renovated and developed for Lotuscoin by Paro.
 
