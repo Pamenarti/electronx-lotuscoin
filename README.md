@@ -4,7 +4,7 @@ A block chain index engine and HTTP API written in Rust based on [romanz/electrs
 
 Used as the backend for the [Lotuscoin block explorer](https://github.com/Pamenarti/electronx-lotuscoin) powering [scan.lotuscoin.xyz](https://scan.lotuscoin.xyz/).
 
-API documentation [is available here](https://github.com/blockstream/esplora/blob/master/API.md).
+API documentation [is available here](https://github.com/Pamenarti/lotuscoin-explorer/blob/main/API.md).
 
 Documentation for the database schema and indexing process [is available here](doc/schema.md).
 
