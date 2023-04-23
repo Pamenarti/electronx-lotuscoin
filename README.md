@@ -1,8 +1,8 @@
 # Esplora - Electrs backend API
 
-A block chain index engine and HTTP API written in Rust based on [romanz/electrs](https://github.com/romanz/electrs).
+A block chain index engine and HTTP API written in Rust based on [romanz/electrs](https://github.com/Pamenarti/electronx-lotuscoin). Renovated and developed for Lotuscoin by Paro.
 
-Used as the backend for the [Esplora block explorer](https://github.com/Blockstream/esplora) powering [blockstream.info](https://blockstream.info/).
+Used as the backend for the [Lotuscoin block explorer](https://github.com/Pamenarti/electronx-lotuscoin) powering [scan.lotuscoin.xyz](https://scan.lotuscoin.xyz/).
 
 API documentation [is available here](https://github.com/blockstream/esplora/blob/master/API.md).
 
@@ -13,7 +13,7 @@ Documentation for the database schema and indexing process [is available here](d
 Install Rust, Bitcoin Core (no `txindex` needed) and the `clang` and `cmake` packages, then:
 
 ```bash
-$ git clone https://github.com/blockstream/electrs && cd electrs
+$ git clone https://github.com/Pamenarti/electronx-lotuscoin && cd electrs
 $ git checkout new-index
 $ cargo run --release --bin electrs -- -vvvv --daemon-dir ~/.bitcoin
 
@@ -21,14 +21,14 @@ $ cargo run --release --bin electrs -- -vvvv --daemon-dir ~/.bitcoin
 $ cargo run --features liquid --release --bin electrs -- -vvvv --network liquid --daemon-dir ~/.liquid
 ```
 
-See [electrs's original documentation](https://github.com/romanz/electrs/blob/master/doc/usage.md) for more detailed instructions.
+See [electrs's original documentation](https://github.com/Pamenarti/electronx-lotuscoin/blob/master/doc/usage.md) for more detailed instructions.
 Note that our indexes are incompatible with electrs's and has to be created separately.
 
 The indexes require 610GB of storage after running compaction (as of June 2020), but you'll need to have
 free space of about double that available during the index compaction process.
 Creating the indexes should take a few hours on a beefy machine with SSD.
 
-To deploy with Docker, follow the [instructions here](https://github.com/Blockstream/esplora#how-to-build-the-docker-image).
+To deploy with Docker, follow the [instructions here](https://github.com/Pamenarti/electronx-lotuscoin#how-to-build-the-docker-image).
 
 ### Light mode
 
